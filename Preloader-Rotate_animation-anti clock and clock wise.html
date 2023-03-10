@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Preloader-Rotate_animation-anti clock and clock wise </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .main {
+            height: 200px;
+            width: 200px;
+            background-color: transparent;
+            margin: 200px auto;
+            position: relative;
+        }
+        
+        .x {
+            height: 200px;
+            width: 200px;
+            background-color: transparent;
+            border: 10px solid transparent;
+            border-radius: 50%;
+            border-top: 10px solid blue;
+            animation: dev 1s linear infinite;
+            padding: 15px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .y {
+            height: 150px;
+            width: 150px;
+            background-color: transparent;
+            border: 10px solid transparent;
+            border-radius: 50%;
+            border-top: 10px solid red;
+            animation: hem 1s linear infinite;
+            position: absolute;
+            top: 25px;
+            left: 25px;
+        }
+        
+        .z {
+            height: 100px;
+            width: 100px;
+            background-color: transparent;
+            border: 10px solid transparent;
+            border-radius: 50%;
+            border-top: 10px solid yellow;
+            animation: pa 1s linear infinite;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        
+        @keyframes dev {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes hem {
+            from {
+                transform: rotate(360deg);
+            }
+            to {
+                transform: rotate(0deg);
+            }
+        }
+        
+        @keyframes pa {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="x"></div>
+        <div class="y"></div>
+        <div class="z"></div>
+    </div>
+</body>
+
+</html>
